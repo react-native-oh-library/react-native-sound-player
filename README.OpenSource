@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-sound-player",
+        "License": "MIT License",
+        "License File": "https://github.com/johnsonsu/react-native-sound-player/blob/master/LICENSE",
+        "Version Number": "0.14.5",
+        "Owner" : "xiafeng@huawei.com"
+        "Upstream URL": "https://github.com/johnsonsu/react-native-sound-player",
+        "Description": "Play or stream audio files in ReactNative on Android ios."
+    }
+]
