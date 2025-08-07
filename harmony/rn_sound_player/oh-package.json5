@@ -1,0 +1,13 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "author": "",
+  "name": "@react-native-ohos/react-native-sound-player",
+  "description": "Play or stream audio files in ReactNative on harmony.",
+  "main": "ts.ets",
+  "version": "0.14.5-rc.1",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "^0.72.32",
+  }
+}
