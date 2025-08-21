@@ -52,6 +52,7 @@ declare module "react-native-sound-player" {
     resumeAsync: () => Promise<void>;
     stopAsync: () => Promise<void>;
     setMixAudioAsync: (on: boolean) => Promise<void>;
+    setSpeakerAsync: (on: boolean) => Promise<void>;
 
     /** Seek to seconds of the currently playing file. */
     seek: (seconds: number) => void;
