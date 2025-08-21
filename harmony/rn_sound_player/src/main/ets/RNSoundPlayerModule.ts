@@ -387,5 +387,33 @@ export class RNSoundPlayerModule extends AnyThreadTurboModule {
     let audioManager = audio.getAudioManager();
     let audioSessionManager: audio.AudioSessionManager = audioManager.getSessionManager();
     await audioSessionManager.activateAudioSession(strategy);
+    Logger.info(TAG, `RNSoundPlayer setMixAudioAsync do: ${on}`);
+  }
+
+  async setSpeakerAsync(on: boolean){
+    let audioManager = audio.getAudioManager();
+    let audioRoutingManager: audio.AudioRoutingManager = audioManager.getRoutingManager();
+
+    let audioStreamInfo: audio.AudioStreamInfo = {
+      samplingRate: audio.AudioSamplingRate.SAMPLE_RATE_48000, // 采样率。
+      channels: audio.AudioChannel.CHANNEL_2, // 通道。
+      sampleFormat: audio.AudioSampleFormat.SAMPLE_FORMAT_S16LE, // 采样格式。
+      encodingType: audio.AudioEncodingType.ENCODING_TYPE_RAW // 编码格式。
+    };
+
+    let audioRendererInfo: audio.AudioRendererInfo = {
+      usage: audio.StreamUsage.STREAM_USAGE_VOICE_COMMUNICATION,
+      rendererFlags: 0 // 音频渲染器标志。
+    };
+
+    let audioRendererOptions: audio.AudioRendererOptions = {
+      streamInfo: audioStreamInfo,
+      rendererInfo: audioRendererInfo
+    };
+
+    let audioRenderer: audio.AudioRenderer = await audio.createAudioRenderer(audioRendererOptions);
+    await audioRenderer?.start();
+    await audioRoutingManager.setCommunicationDevice(audio.CommunicationDeviceType.SPEAKER, on);
+    Logger.info(TAG, `RNSoundPlayer setSpeakerAsync do: ${on}`);
   }
 }

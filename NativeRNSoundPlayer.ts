@@ -71,6 +71,8 @@ export interface Spec extends TurboModule {
     stopAsync(): Promise<void>;
 
     setMixAudioAsync(on: boolean): Promise<void>;
+    
+    setSpeakerAsync(on: boolean): Promise<void>;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>("RNSoundPlayer");

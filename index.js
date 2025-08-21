@@ -160,4 +160,8 @@ export default {
     await RNSoundPlayer.stopAsync();
   },
 
+  setSpeakerAsync: (on: boolean) => {
+    RNSoundPlayer.setSpeakerAsync(on);
+  },
+
 };

@@ -57,6 +57,7 @@ RNSoundPlayer::RNSoundPlayer(const ArkTSTurboModule::Context ctx, const std::str
         ARK_METHOD_METADATA(setMixAudio, 1),        
         ARK_ASYNC_METHOD_METADATA(getInfo, 0),
         ARK_ASYNC_METHOD_METADATA(setMixAudioAsync, 1),
+        ARK_ASYNC_METHOD_METADATA(setSpeakerAsync, 1),
     };
 }
 
