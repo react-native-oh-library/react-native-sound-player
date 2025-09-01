@@ -78,6 +78,7 @@ export class RNSoundPlayerModule extends AnyThreadTurboModule {
           case 'prepared':
             Logger.info(TAG, 'RNSoundPlayer state prepared called');
             if (this.url) {
+              this.sendEvent(EVENT_FINISHED_LOADING, { "success": true });
               this.sendEvent(EVENT_FINISHED_LOADING_URL, { "success": true, "url": this.url });
             } else {
               this.sendMountFileSuccessEvents(this.name, this.type);
