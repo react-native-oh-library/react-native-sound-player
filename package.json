@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-sound-player",
-  "version": "0.14.6-rc.3",
+  "version": "0.14.6",
   "description": "Play or stream audio files in ReactNative on harmony",
   "main": "index.js",
   "types": "index.d.ts",
