@@ -22,5 +22,6 @@
  * SOFTWARE.
  */
 
-export * from "./src/main/ets/RNSoundPlayerPackage";
-export * from "./src/main/ets/RNSoundPlayerModule"
+import { RNSoundPlayerPackage as SoundPlayerPackage } from './src/main/ets/RNSoundPlayerPackage';
+export * from "./ts";
+export default SoundPlayerPackage;
