@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-oh-tpl/react-native-sound-player",
+  "name": "@react-native-ohos/react-native-sound-player",
   "version": "0.14.6",
   "description": "Play or stream audio files in ReactNative on harmony",
   "main": "index.js",
@@ -37,7 +37,13 @@
     "!harmony/**/oh_modules"
   ],
   "harmony": {
-    "alias": "react-native-sound-player"    
+    "alias": "react-native-sound-player",
+    "autolinking": {
+ 	       "etsPackageClassName": "SoundPlayerPackage",
+ 	       "cppPackageClassName": "RNSoundPlayerPackage",
+ 	       "cmakeLibraryTargetName": "rnoh_sound_player",
+ 	       "ohPackageName": "@react-native-ohos/react-native-sound-player"
+ 	     }    
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

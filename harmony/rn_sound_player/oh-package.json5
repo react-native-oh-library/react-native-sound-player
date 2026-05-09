@@ -3,11 +3,11 @@
   "devDependencies": {
   },
   "author": "",
-  "name": "@react-native-oh-tpl/react-native-sound-player",
+  "name": "@react-native-ohos/react-native-sound-player",
   "description": "Play or stream audio files in ReactNative on harmony.",
-  "main": "ts.ets",
+  "main": "index.ets",
   "version": "0.14.6",
   "dependencies": {
-    "@rnoh/react-native-openharmony": "^0.72.32",
+    "@rnoh/react-native-openharmony": "^0.82.7",
   }
 }
