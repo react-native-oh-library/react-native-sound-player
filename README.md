@@ -1,9 +1,13 @@
-# @react-native-oh-tpl/react-native-sound-player
-This project is based on  [react-native-sound-player](https://github.com/johnsonsu/react-native-sound-player).
-## Documentation
-[中文](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/react-native-sound-player.md).
+#  迁移声明
 
-[English](https://gitee.com/react-native-oh-library/usage-docs/blob/master/en/react-native-sound-player.md).
+- 本仓库已迁移至 GitCode：[CPF-RN/rntpc_react-native-sound-player](https://gitcode.com/CPF-RN/rntpc_react-native-sound-player)。
+- 包名已更改为 `@react-native-ohos/react-native-sound-player`，支持直接从 npm 下载。
+- 更多详情请查阅新仓库的 README 文件。
+- 本仓库旧版本的文档已归档：[链接](/doc/zh-cn.md)
 
-## License
-This library is licensed under [The MIT License (MIT)](https://github.com/react-native-oh-library/react-native-sound-player/blob/sig/LICENSE).
+# Migration Announcement
+
+- This repository has been migrated to GitCode：[CPF-RN/rntpc_react-native-sound-player](https://gitcode.com/CPF-RN/rntpc_react-native-sound-player)       
+- The package name has been changed to `@react-native-ohos/react-native-sound-player` and is now available for direct download from npm.
+- For more details, please refer to the README in the new repository.
+- Archived documentation for versions in this repository can be found here: [Link](/doc/en.md)
